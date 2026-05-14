@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino y sus Componentes</title>
+    <link rel="stylesheet" href="arduino.css">
+</head>
+<body>
+
+    <header>
+        <h1>Arduino y sus Componentes</h1>
+        <p>Introducción al hardware, sensores y electrónica</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+            <h2>¿Qué es Arduino?</h2>
+            <p>
+                Arduino es una plataforma de creación de electrónica de código abierto, 
+                basada en hardware y software libre, flexible y fácil de utilizar. 
+                Permite a creadores, desarrolladores y entusiastas construir proyectos 
+                interactivos que pueden detectar y controlar objetos en el mundo real.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Placas Principales</h2>
+            <ul>
+                <li><strong>Arduino Uno:</strong> La placa más popular y recomendada para principiantes.</li>
+                <li><strong>Arduino Nano:</strong> Una versión compacta, ideal para proyectos con poco espacio.</li>
+                <li><strong>Arduino Mega:</strong> Diseñada para proyectos más complejos que requieren más pines de entrada/salida.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Sensores Comunes</h2>
+
+            <h3>Sensor Ultrasónico (HC-SR04)</h3>
+            <p>
+                Utiliza ondas sonoras para medir la distancia entre el sensor y un objeto.
+            </p>
+
+            <h3>Sensor de Temperatura y Humedad (DHT11 / DHT22)</h3>
+            <p>
+                Mide las condiciones climáticas del entorno y es muy usado en estaciones meteorológicas caseras.
+            </p>
+
+            <h3>Fotorresistencia (LDR)</h3>
+            <p>
+                Un componente que varía su resistencia dependiendo de la cantidad de luz que incide sobre él.
+            </p>
+
+            <h3>Sensor de Movimiento (PIR)</h3>
+            <p>
+                Detecta cambios en la radiación infrarroja, ideal para alarmas y sistemas que detectan la presencia de personas.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Actuadores y Otros Componentes</h2>
+            <ul>
+                <li><strong>LEDs:</strong> Diodos emisores de luz para indicadores visuales.</li>
+                <li><strong>Servomotores:</strong> Motores que permiten controlar con precisión la posición angular.</li>
+                <li><strong>Módulo Relé (Relay):</strong> Un interruptor magnético que permite controlar altas tensiones (como focos de 110V/220V) desde el Arduino.</li>
+                <li><strong>Protoboard:</strong> Placa de pruebas para conectar componentes sin necesidad de soldar.</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Ejemplo de Código: Parpadear un LED</h2>
+            <p>El clásico "Hola Mundo" en Arduino consiste en encender y apagar un LED conectado al pin 13.</p>
+            <pre>
+void setup() {
+  pinMode(13, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(13, HIGH);
+  delay(1000);
+  digitalWrite(13, LOW);
+  delay(1000);
+}
+            </pre>
+        </section>
+
+        <section class="card">
+            <h2>Aplicaciones de Arduino</h2>
+            <ul>
+                <li>Robótica Educativa</li>
+                <li>Domótica (Casas Inteligentes)</li>
+                <li>Sistemas de Alarma y Seguridad</li>
+                <li>Internet de las Cosas (IoT)</li>
+                <li>Instrumentos Musicales MIDI</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Proyecto HTML y CSS sobre Componentes de Arduino</p>
+    </footer>
+
+</body>
+</html>
